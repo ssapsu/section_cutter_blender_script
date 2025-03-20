@@ -46,6 +46,14 @@ The boolean modifiers are added but not automatically applied. You can preview t
 - **Cutter Visibility**:
 The cutter object is set to wireframe in the viewport and hidden in renders to avoid interfering with your final output.
 
+## Limitations
+- **Mesh Matching Issues**:
+After performing the boolean operation, some meshes may not match perfectly along the cut edges. This can result in unexpected geometry artifacts, such as gaps or misaligned vertices.
+- **Post-Processing Required**:
+To improve results, consider applying additional cleanup operations, such as merging by distance, remeshing, or manually adjusting the affected areas.
+- **Complex Geometry Considerations**:
+Boolean operations can be less reliable when dealing with highly detailed or non-manifold geometry. Ensuring clean topology before applying the script can help minimize errors.
+
 ## License
 
 Feel free to modify and use this script in your projects as needed.
